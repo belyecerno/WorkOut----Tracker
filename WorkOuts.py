@@ -37,7 +37,7 @@ class Training(WorkOut):
     def add_to_file(self, date):
          data.append(self)
          data_to_save=[tr.to_dict() for tr in data]
-         with open('WorkOut-Tracker/WorkOut -- Tracker/Plan.json', 'w', encoding= 'utf-8') as f:
+         with open('Plan.json', 'w', encoding= 'utf-8') as f:
               json.dump(data_to_save, f, ensure_ascii=False, indent=4)  
     
 Training1=Training('Среда', 'Силовая', 'Жим лежа', 8, 90)
